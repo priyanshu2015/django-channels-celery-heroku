@@ -1,0 +1,1 @@
+celery -A channels_celery_heroku_project beat -l INFO

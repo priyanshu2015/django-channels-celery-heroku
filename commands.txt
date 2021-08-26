@@ -1,0 +1,2 @@
+celery -A channels_celery_heroku_project.celery worker --pool=solo -l info
+celery -A channels_celery_heroku_project beat -l INFO 
