@@ -165,8 +165,9 @@
     <script>
         const roomName = JSON.parse(document.getElementById('room-name').textContent);
 
+        var ws_scheme = window.location.protocol == "https:" ? "wss" : "ws";
         const notificationSocket = new WebSocket(
-            'ws://'
+            ws_scheme + '://'
             + window.location.host
             + '/ws/notification/'
             + roomName
